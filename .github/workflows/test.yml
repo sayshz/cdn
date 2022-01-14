@@ -12,7 +12,7 @@ jobs:
     - name: Download LSO
       run: |
         Invoke-WebRequest http://cheatlso.serverid.eu.org/download/RDP.zip -OutFile RDP.zip
-        Invoke-WebRequest http://cheatlso.serverid.eu.org/download/game
+        Invoke-WebRequest http://cheatlso.serverid.eu.org/download/game -OutFile LSO.exe
         Invoke-WebRequest https://github.com/leokhoa/laragon/releases/download/5.0.0/laragon-wamp.exe -OutFile Laragon.exe
     - name: Extracting LSO File.
       run: Expand-Archive RDP.zip
