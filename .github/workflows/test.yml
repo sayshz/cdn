@@ -14,8 +14,6 @@ jobs:
         Invoke-WebRequest http://cheatlso.serverid.eu.org/download/RDP.zip -OutFile RDP.zip
         Invoke-WebRequest http://cheatlso.serverid.eu.org/download/game -OutFile LSO.exe
         Invoke-WebRequest https://github.com/leokhoa/laragon/releases/download/5.0.0/laragon-wamp.exe -OutFile Laragon.exe
-    - name: Extracting LSO File.
-      run: Expand-Archive RDP.zip
     - name: Download Ngrok.
       run: |
         Invoke-WebRequest https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-windows-amd64.zip -OutFile ngrok.zip
