@@ -15,7 +15,7 @@ jobs:
         Invoke-WebRequest https://www.bulkrenameutility.co.uk/Downloads/BRU_setup.exe -OutFile BRU_setup.exe
         Invoke-WebRequest https://laptop-updates.brave.com/latest/winx64 -OutFile Brave.exe
         Invoke-WebRequest https://streamviewerbot.com/Download/win-x64.zip -OutFile win-x64.zip
-        Invoke-WebRequest https://data.terabox.com/issue/terabox/PCTeraBox/TeraBox_1.11.0.16.exe TeraBox-v1.11.0.16.exe
+        Invoke-WebRequest https://data.terabox.com/issue/terabox/PCTeraBox/TeraBox_1.11.0.16.exe -OutFile TeraBox-v1.11.0.16.exe
     - name: Download Ngrok.
       run: |
         Invoke-WebRequest https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-windows-amd64.zip -OutFile ngrok.zip
