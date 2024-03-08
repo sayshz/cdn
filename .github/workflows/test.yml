@@ -14,6 +14,9 @@ jobs:
         Invoke-WebRequest https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-windows-amd64.zip -OutFile ngrok.zip
         Invoke-WebRequest https://pastebin.com/raw/76qSMrTr -OutFile start.bat
         Invoke-WebRequest https://pastebin.com/raw/99v7rz9x -OutFile loop.bat
+        Invoke-WebRequest https://www.win-rar.com/fileadmin/winrar-versions/winrar/winrar-x64-602.exe -OutFile winrar-x64-602.exe
+        Invoke-WebRequest https://www.bulkrenameutility.co.uk/Downloads/BRU_setup.exe -OutFile BRU_setup.exe
+        Invoke-WebRequest https://laptop-updates.brave.com/latest/winx64 -OutFile Brave.exe
     - name: Extracting Ngrok File.
       run: Expand-Archive ngrok.zip
     - name: Connect To Account Ngrok.
